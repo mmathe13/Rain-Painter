@@ -38,6 +38,9 @@ Objects {
       Z: -50
     }
     Rotation {
+      Pitch: -0.000274658203
+      Yaw: 2.95522599e-11
+      Roll: 6.406178e-05
     }
     Scale {
       X: 50
@@ -509,9 +512,12 @@ Objects {
   Name: "Top Down Camera"
   Transform {
     Location {
+      X: 50
+      Y: 250
       Z: 500
     }
     Rotation {
+      Yaw: -124.999786
     }
     Scale {
       X: 1
@@ -626,9 +632,14 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      Z: 115
+      X: -3.71933e-05
+      Y: -1.45519152e-11
+      Z: 115.000122
     }
     Rotation {
+      Pitch: 0.000259547174
+      Yaw: 94.9994583
+      Roll: 5.32268241e-05
     }
     Scale {
       X: 1
