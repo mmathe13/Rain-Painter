@@ -14,17 +14,13 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 16940102053547858507
   ChildIds: 16813558807825262224
   ChildIds: 5505624639612583424
+  ChildIds: 12500957234883665446
   ChildIds: 14982843161775482339
   ChildIds: 6434015202034749409
   ChildIds: 15769345664886830863
-  ChildIds: 968228357662960205
-  ChildIds: 16901277261822476267
-  ChildIds: 10518204249767867403
   ChildIds: 11970190691107049419
-  ChildIds: 524275910505115048
   ChildIds: 14194151642728808760
   ChildIds: 3437177346844918212
   ChildIds: 17931805196680296134
@@ -160,7 +156,7 @@ Objects {
 }
 Objects {
   Id: 9306092732261768960
-  Name: "ClientContext"
+  Name: "Client Context"
   Transform {
     Location {
     }
@@ -474,44 +470,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Bottles"
-  }
-}
-Objects {
-  Id: 524275910505115048
-  Name: "Sphere - Inverted"
-  Transform {
-    Location {
-      X: 950
-      Y: -850
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17708192972761953617
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
   }
 }
 Objects {
@@ -1969,102 +1927,6 @@ Objects {
   }
 }
 Objects {
-  Id: 10518204249767867403
-  Name: "Fog Adjustment Volume"
-  Transform {
-    Location {
-      X: -550
-      Y: -2500
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13631687888471262490
-    }
-    TeamSettings {
-    }
-  }
-}
-Objects {
-  Id: 16901277261822476267
-  Name: "Environment Fog Default VFX"
-  Transform {
-    Location {
-      X: -750
-      Y: 2200
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 2224571462023946700
-    }
-    TeamSettings {
-    }
-  }
-}
-Objects {
-  Id: 968228357662960205
-  Name: "Basic Water Splash VFX"
-  Transform {
-    Location {
-      Y: -650
-      Z: 150
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 8162117926327767989
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-}
-Objects {
   Id: 15769345664886830863
   Name: "Sky Cape Canaveral"
   Transform {
@@ -2172,6 +2034,36 @@ Objects {
       Physics {
       }
     }
+  }
+}
+Objects {
+  Id: 12500957234883665446
+  Name: "Environment"
+  Transform {
+    Location {
+      Z: -50
+    }
+    Rotation {
+      Pitch: -0.000273207552
+      Yaw: 2.95522599e-11
+      Roll: 6.406178e-05
+    }
+    Scale {
+      X: 50
+      Y: 50
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Environment"
   }
 }
 Objects {
@@ -2413,6 +2305,7 @@ Objects {
   ParentId: 4781671109827199097
   UnregisteredParameters {
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2421,36 +2314,5 @@ Objects {
   }
   PlayerSpawnPoint {
     TeamInt: 1
-  }
-}
-Objects {
-  Id: 16940102053547858507
-  Name: "Game Settings"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Settings {
-    IsDefault: true
-    GameSettings {
-      RagdollOnDeath: true
-      ChatMode {
-        Value: "mc:echatmode:teamandall"
-      }
-    }
   }
 }
