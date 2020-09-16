@@ -38,7 +38,7 @@
     OwnerAccountId: "bd602d5201b04b3fbf7be10f59c8f974"
     OwnerName: "CoreAcademy"
     Version: "1.0.0"
-    Description: "Lightbulb and Switch template for the Lua Scripting Tutorial.\r\n\r\nCheck it out at: https://docs.coregames.com/tutorials/lua_basics_lightbulb/"
+    Description: "Lightbulb and Switch template for the Lua Scripting Tutorial.\r\n\r\nCheck it out at: https://docs.coregames.com/tutorials/lua_basics_lightbulb/\r\n\r\nUpdate 1.01: Removes trigger. So you can add it yourself!"
   }
   SerializationVersion: 62
 }
