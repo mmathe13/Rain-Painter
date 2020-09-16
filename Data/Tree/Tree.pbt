@@ -14,18 +14,14 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 16940102053547858507
   ChildIds: 16813558807825262224
   ChildIds: 5505624639612583424
+  ChildIds: 12500957234883665446
   ChildIds: 14982843161775482339
   ChildIds: 6434015202034749409
   ChildIds: 15769345664886830863
-  ChildIds: 968228357662960205
-  ChildIds: 16901277261822476267
-  ChildIds: 10518204249767867403
   ChildIds: 11970190691107049419
-  ChildIds: 524275910505115048
-  ChildIds: 3650616888393611789
+  ChildIds: 14194151642728808760
   ChildIds: 3437177346844918212
   ChildIds: 17931805196680296134
   ChildIds: 6539487312784289270
@@ -160,7 +156,7 @@ Objects {
 }
 Objects {
   Id: 9306092732261768960
-  Name: "ClientContext"
+  Name: "Client Context"
   Transform {
     Location {
     }
@@ -174,6 +170,8 @@ Objects {
   }
   ParentId: 17931805196680296134
   ChildIds: 12208059598761278510
+  ChildIds: 6534163477900792167
+  ChildIds: 8985983627074303778
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -185,8 +183,8 @@ Objects {
   }
 }
 Objects {
-  Id: 12208059598761278510
-  Name: "CoinUI"
+  Id: 8985983627074303778
+  Name: "RoundUI"
   Transform {
     Location {
     }
@@ -199,8 +197,6 @@ Objects {
     }
   }
   ParentId: 9306092732261768960
-  ChildIds: 6030553017434171314
-  ChildIds: 6534163477900792167
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -256,7 +252,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12208059598761278510
+  ParentId: 9306092732261768960
   ChildIds: 7877676488139112718
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -273,7 +269,7 @@ Objects {
       }
     }
     Text {
-      Label: "All Coins Found"
+      Label: "All Coins Found!"
       Color {
         R: 0.986000061
         G: 0.876444399
@@ -335,6 +331,63 @@ Objects {
   }
 }
 Objects {
+  Id: 12208059598761278510
+  Name: "CoinUI"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9306092732261768960
+  ChildIds: 6030553017434171314
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 6030553017434171314
   Name: "DisplayCoins"
   Transform {
@@ -391,8 +444,8 @@ Objects {
   }
 }
 Objects {
-  Id: 3650616888393611789
-  Name: "Bottle 01"
+  Id: 14194151642728808760
+  Name: "Bottles"
   Transform {
     Location {
       X: 1250
@@ -414,57 +467,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 16114015911049952507
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 524275910505115048
-  Name: "Sphere - Inverted"
-  Transform {
-    Location {
-      X: 950
-      Y: -850
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17708192972761953617
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Bottles"
   }
 }
 Objects {
@@ -1922,102 +1927,6 @@ Objects {
   }
 }
 Objects {
-  Id: 10518204249767867403
-  Name: "Fog Adjustment Volume"
-  Transform {
-    Location {
-      X: -550
-      Y: -2500
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13631687888471262490
-    }
-    TeamSettings {
-    }
-  }
-}
-Objects {
-  Id: 16901277261822476267
-  Name: "Environment Fog Default VFX"
-  Transform {
-    Location {
-      X: -750
-      Y: 2200
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 2224571462023946700
-    }
-    TeamSettings {
-    }
-  }
-}
-Objects {
-  Id: 968228357662960205
-  Name: "Basic Water Splash VFX"
-  Transform {
-    Location {
-      Y: -650
-      Z: 150
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 8162117926327767989
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-}
-Objects {
   Id: 15769345664886830863
   Name: "Sky Cape Canaveral"
   Transform {
@@ -2125,6 +2034,36 @@ Objects {
       Physics {
       }
     }
+  }
+}
+Objects {
+  Id: 12500957234883665446
+  Name: "Environment"
+  Transform {
+    Location {
+      Z: -50
+    }
+    Rotation {
+      Pitch: -0.000273207552
+      Yaw: 2.95522599e-11
+      Roll: 6.406178e-05
+    }
+    Scale {
+      X: 50
+      Y: 50
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Environment"
   }
 }
 Objects {
@@ -2366,6 +2305,7 @@ Objects {
   ParentId: 4781671109827199097
   UnregisteredParameters {
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2374,36 +2314,5 @@ Objects {
   }
   PlayerSpawnPoint {
     TeamInt: 1
-  }
-}
-Objects {
-  Id: 16940102053547858507
-  Name: "Game Settings"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Settings {
-    IsDefault: true
-    GameSettings {
-      RagdollOnDeath: true
-      ChatMode {
-        Value: "mc:echatmode:teamandall"
-      }
-    }
   }
 }

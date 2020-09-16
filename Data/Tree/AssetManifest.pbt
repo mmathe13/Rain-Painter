@@ -1,13 +1,4 @@
 ﻿Assets {
-  Id: 17708192972761953617
-  Name: "Sphere - Inverted"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_sphere_inverted_001"
-  }
-}
-Assets {
   Id: 17619731731262860672
   Name: "Emissive Glow Transparent"
   PlatformAssetType: 2
@@ -35,30 +26,12 @@ Assets {
   }
 }
 Assets {
-  Id: 16114015911049952507
-  Name: "Bottle 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_bottle_001"
-  }
-}
-Assets {
   Id: 13631712585594906298
   Name: "Plastic Matte"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "plastic_matte_001"
-  }
-}
-Assets {
-  Id: 13631687888471262490
-  Name: "Fog Adjustment Volume"
-  PlatformAssetType: 20
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_fog_adjustment"
   }
 }
 Assets {
@@ -116,15 +89,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8162117926327767989
-  Name: "Basic Water Splash VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_watersplash"
-  }
-}
-Assets {
   Id: 3985714508255158141
   Name: "Invisible"
   PlatformAssetType: 2
@@ -149,15 +113,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_sphere_002"
-  }
-}
-Assets {
-  Id: 2224571462023946700
-  Name: "Environment Fog Default VFX"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_env_fog_default"
   }
 }
 Assets {
