@@ -1,4 +1,13 @@
 ﻿Assets {
+  Id: 17708192972761953617
+  Name: "Sphere - Inverted"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_inverted_001"
+  }
+}
+Assets {
   Id: 17619731731262860672
   Name: "Emissive Glow Transparent"
   PlatformAssetType: 2
@@ -62,15 +71,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11818522067679281709
-  Name: "Volumetric Fog Injector Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_volumetric_fog_injector"
-  }
-}
-Assets {
   Id: 11785886982020390712
   Name: "Metal Frame 03"
   PlatformAssetType: 2
@@ -116,15 +116,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6021997351757695001
-  Name: "Rain Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_rain_volume_vfx"
-  }
-}
-Assets {
   Id: 3985714508255158141
   Name: "Invisible"
   PlatformAssetType: 2
@@ -140,15 +131,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_rounded_001"
-  }
-}
-Assets {
-  Id: 3921291466081189955
-  Name: "Rain Splash Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_rainsplash_volume"
   }
 }
 Assets {
