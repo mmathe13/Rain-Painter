@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 7478547593755074106
-  Name: "PickupBottle"
+  Id: 13014678719011671718
+  Name: "DisplayUI_1"
   PlatformAssetType: 3
   TextAsset {
   }

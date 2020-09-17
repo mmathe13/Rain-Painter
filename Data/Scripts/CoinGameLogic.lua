@@ -1,5 +1,5 @@
 ﻿-- Get the folder containing all the coin objects
-local coinFolder = World.FindObjectByName("Coins")
+local dropFolder = World.FindObjectByName("Bottles")
 
 -- Check the number of enabled coins
 -- If the game should end, send a message through the Game Settings
@@ -8,8 +8,8 @@ local coinFolder = World.FindObjectByName("Coins")
 
 function Tick()
     Task.Wait(1)
-    local coinsLeft = GetCoinsLeft()
-    if coinsLeft == 0 then
+    local dropsLeft = GetDropsLeft()
+    if dropsLeft == 0 then
         World.FindObjectByName("Game Settings"):SetNetworkedCustomProperty("gameOver", true)
         for i = 3, 0, -1 do
             Task.Wait(1)
@@ -21,26 +21,27 @@ function Tick()
         ResetMap()
     end
 end
+
 function ResetMap()
     -- Set all coins to be enabled
-    for _, coin in pairs(coinFolder:GetChildren()) do
-        if coin ~= nil then
-            coin.isEnabled = true
+    for _, drop in pairs(dropFolder:GetChildren()) do
+        if drop ~= nil then
+            drop.isEnabled = true
         end
     end
 
     -- Reset resources for every player
     local players = Game.GetPlayers()
     for _, player in pairs(players) do
-        player:SetResource("Manticoin", 0)
+        player:SetResource("Bottles", 0)
     end
 end
-    
+
 -- Get the amount of coins that are enabled in the scene
-function GetCoinsLeft()
+function GetDropsLeft()
     local count = 0
-    for _, coin in pairs(coinFolder:GetChildren()) do
-        if coin ~= nil and coin.isEnabled then
+    for _, drop in pairs(dropFolder:GetChildren()) do
+        if drop ~= nil and drop.isEnabled then
             count = count + 1
         end
     end

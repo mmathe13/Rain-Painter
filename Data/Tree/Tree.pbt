@@ -21,12 +21,10 @@ Objects {
   ChildIds: 6434015202034749409
   ChildIds: 15769345664886830863
   ChildIds: 11970190691107049419
+  ChildIds: 17991631867021629414
   ChildIds: 14194151642728808760
-  ChildIds: 3437177346844918212
-  ChildIds: 17931805196680296134
   ChildIds: 6539487312784289270
   ChildIds: 1753263312977082874
-  ChildIds: 17787617192937019293
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -36,40 +34,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 17787617192937019293
-  Name: "BottleTemplate"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 13862189904760200714
-      value {
-        Overrides {
-          Name: "Name"
-          String: "BottleTemplate"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -350
-            Y: -500
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 399837794429118482
-    }
   }
 }
 Objects {
@@ -145,7 +109,36 @@ Objects {
   }
 }
 Objects {
-  Id: 17931805196680296134
+  Id: 14194151642728808760
+  Name: "Bottles"
+  Transform {
+    Location {
+      X: 1250
+      Y: 1200
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Bottles"
+  }
+}
+Objects {
+  Id: 17991631867021629414
   Name: "UI Container"
   Transform {
     Location {
@@ -159,7 +152,7 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 9306092732261768960
+  ChildIds: 16202988677352473647
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -190,8 +183,8 @@ Objects {
   }
 }
 Objects {
-  Id: 9306092732261768960
-  Name: "Client Context"
+  Id: 16202988677352473647
+  Name: "ClientContext"
   Transform {
     Location {
     }
@@ -203,10 +196,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17931805196680296134
-  ChildIds: 12208059598761278510
-  ChildIds: 6534163477900792167
-  ChildIds: 8985983627074303778
+  ParentId: 17991631867021629414
+  ChildIds: 8278029968058771920
+  ChildIds: 14609110887970027975
+  ChildIds: 12722385409200849347
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -218,63 +211,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8985983627074303778
-  Name: "RoundUI"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9306092732261768960
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 20
-      Justification {
-        Value: "mc:etextjustify:left"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 6534163477900792167
+  Id: 12722385409200849347
   Name: "VictoryUI"
   Transform {
     Location {
@@ -287,8 +224,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9306092732261768960
-  ChildIds: 7877676488139112718
+  ParentId: 16202988677352473647
+  ChildIds: 1101463864117394245
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -298,21 +235,23 @@ Objects {
   Control {
     Width: 200
     Height: 60
+    UIX: 1500
+    UIY: 400
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
     Text {
-      Label: "All Coins Found!"
+      Label: "All Drops Found!"
       Color {
-        R: 0.986000061
-        G: 0.876444399
+        G: 0.586000085
+        B: 0.130222157
         A: 1
       }
-      Size: 36
+      Size: 50
       Justification {
-        Value: "mc:etextjustify:left"
+        Value: "mc:etextjustify:center"
       }
       AutoWrapText: true
     }
@@ -331,8 +270,8 @@ Objects {
   }
 }
 Objects {
-  Id: 7877676488139112718
-  Name: "DisplayUI"
+  Id: 1101463864117394245
+  Name: "DisplayUI_1"
   Transform {
     Location {
     }
@@ -344,7 +283,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6534163477900792167
+  ParentId: 12722385409200849347
   UnregisteredParameters {
     Overrides {
       Name: "cs:GameSettings"
@@ -361,13 +300,13 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 15486628944607940275
+      Id: 13014678719011671718
     }
   }
 }
 Objects {
-  Id: 12208059598761278510
-  Name: "CoinUI"
+  Id: 14609110887970027975
+  Name: "UI Container"
   Transform {
     Location {
     }
@@ -379,8 +318,153 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9306092732261768960
-  ChildIds: 6030553017434171314
+  ParentId: 16202988677352473647
+  ChildIds: 12816650368521196266
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 12816650368521196266
+  Name: "RoundUI"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14609110887970027975
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Text"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 8278029968058771920
+  Name: "UI Container"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16202988677352473647
+  ChildIds: 1681562530321525890
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 1681562530321525890
+  Name: "DropsUI"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8278029968058771920
+  ChildIds: 8111885660808910033
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -423,8 +507,8 @@ Objects {
   }
 }
 Objects {
-  Id: 6030553017434171314
-  Name: "DisplayCoins"
+  Id: 8111885660808910033
+  Name: "DisplayDrops"
   Transform {
     Location {
     }
@@ -436,7 +520,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12208059598761278510
+  ParentId: 1681562530321525890
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -445,66 +529,8 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 3904401837991300471
+      Id: 1928498699928318983
     }
-  }
-}
-Objects {
-  Id: 3437177346844918212
-  Name: "Coins"
-  Transform {
-    Location {
-      X: 850
-      Y: 650
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Coins"
-  }
-}
-Objects {
-  Id: 14194151642728808760
-  Name: "Bottles"
-  Transform {
-    Location {
-      X: 1250
-      Y: 1200
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Bottles"
   }
 }
 Objects {
