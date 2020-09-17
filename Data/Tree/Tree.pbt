@@ -14,19 +14,11 @@ Objects {
       Z: 1
     }
   }
+  ChildIds: 16940102053547858507
   ChildIds: 16813558807825262224
   ChildIds: 5505624639612583424
-  ChildIds: 12500957234883665446
   ChildIds: 14982843161775482339
   ChildIds: 6434015202034749409
-<<<<<<< Updated upstream
-  ChildIds: 15769345664886830863
-  ChildIds: 11970190691107049419
-  ChildIds: 17991631867021629414
-  ChildIds: 14194151642728808760
-  ChildIds: 6539487312784289270
-  ChildIds: 1753263312977082874
-=======
   ChildIds: 11260806249696948345
   ChildIds: 14654104045955141938
   ChildIds: 968228357662960205
@@ -47,7 +39,6 @@ Objects {
   ChildIds: 10717240954082065180
   ChildIds: 189055110806688984
   ChildIds: 5785233464874795310
-  ChildIds: 16901277261822476267
   ChildIds: 10518204249767867403
   ChildIds: 11383782485536705893
   ChildIds: 4053410443470572998
@@ -55,14 +46,13 @@ Objects {
   ChildIds: 5529777209196567177
   ChildIds: 525257230687326746
   ChildIds: 18270781346320081150
-  ChildIds: 2376495575326730626
   ChildIds: 6490674719837590930
   ChildIds: 9625739988398705113
   ChildIds: 416051486053366849
   ChildIds: 14991520040916892881
   ChildIds: 2733615633258713653
   ChildIds: 14050703825278652012
->>>>>>> Stashed changes
+  ChildIds: 7686969339521070058
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -72,6 +62,41 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 7686969339521070058
+  Name: "Rain Volume VFX"
+  Transform {
+    Location {
+      X: 100
+      Y: 350
+      Z: -100
+    }
+    Rotation {
+    }
+    Scale {
+      X: 4.75
+      Y: 5.5
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 6021997351757695001
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
   }
 }
 Objects {
@@ -216,42 +241,8 @@ Objects {
   }
 }
 Objects {
-<<<<<<< Updated upstream
-  Id: 14194151642728808760
-  Name: "Bottles"
-  Transform {
-    Location {
-      X: 1250
-      Y: 1200
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Bottles"
-  }
-}
-Objects {
-  Id: 17991631867021629414
-  Name: "UI Container"
-=======
   Id: 9625739988398705113
   Name: "Rain Splash Volume VFX"
->>>>>>> Stashed changes
   Transform {
     Location {
       X: -250
@@ -267,11 +258,6 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-<<<<<<< Updated upstream
-  ChildIds: 16202988677352473647
-  WantsNetworking: true
-=======
->>>>>>> Stashed changes
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -387,13 +373,8 @@ Objects {
   }
 }
 Objects {
-<<<<<<< Updated upstream
-  Id: 16202988677352473647
-  Name: "ClientContext"
-=======
-  Id: 2376495575326730626
-  Name: "Player Settings"
->>>>>>> Stashed changes
+  Id: 18270781346320081150
+  Name: "UI Container"
   Transform {
     Location {
     }
@@ -405,136 +386,22 @@ Objects {
       Z: 1
     }
   }
-<<<<<<< Updated upstream
-  ParentId: 17991631867021629414
-  ChildIds: 8278029968058771920
-  ChildIds: 14609110887970027975
-  ChildIds: 12722385409200849347
-  WantsNetworking: true
-=======
   ParentId: 4781671109827199097
->>>>>>> Stashed changes
+  ChildIds: 9267634616836563056
+  ChildIds: 16135151725154221856
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Settings {
-    IsDefault: true
-    PlayerMovementSettings {
-      WalkSpeed: 640
-      MaxAcceleration: 1800
-      WalkableFloorAngle: 44
-      JumpMaxCount: 1
-      JumpVelocity: 900
-      GroundFriction: 8
-      GravityScale: 1.9
-      MaxSwimSpeed: 420
-      Buoyancy: 1
-      TouchForceFactor: 1
-      BrakingDecelerationFlying: 600
-      MaxFlightSpeed: 600
-      MovementControlMode {
-        Value: "mc:emovementcontrolmode:lookrelative"
-      }
-      LookControlMode {
-        Value: "mc:elookcontrolmode:relative"
-      }
-      FacingMode {
-        Value: "mc:efacingmode:faceaimwhenactive"
-      }
-      DefaultRotationRate: 540
-      SlideRotationRate: 20
-      LookAtCursorProjectionPlane {
-        Value: "mc:eprojectionplane:xy"
-      }
-      LookAtCursorProjectionPlaneAnchor {
-        Value: "mc:eprojectionplaneanchor:playerposition"
-      }
-      MountedMaxAcceleration: 1800
-      MountedWalkSpeed: 960
-      MountedJumpMaxCount: 1
-      MountedJumpVelocity: 900
-      HeadVisibleToSelf: true
-      IsSlideEnabled: true
-      IsCrouchEnabled: true
-      IsJumpEnabled: true
-      CanMoveForward: true
-      CanMoveBackward: true
-      CanMoveLeft: true
-      CanMoveRight: true
-      AbilityAimMode {
-        Value: "mc:eabilityaimmode:viewrelative"
-      }
-      AppearanceChannelingTime: 2
-      MountChannelingTime: 2
-      FlipOnMultiJump: true
-    }
-  }
-}
-Objects {
-<<<<<<< Updated upstream
-  Id: 12722385409200849347
-  Name: "VictoryUI"
-=======
-  Id: 18270781346320081150
-  Name: "UI Container"
->>>>>>> Stashed changes
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-<<<<<<< Updated upstream
-  ParentId: 16202988677352473647
-  ChildIds: 1101463864117394245
-=======
-  ParentId: 4781671109827199097
-  ChildIds: 9267634616836563056
-  ChildIds: 16135151725154221856
->>>>>>> Stashed changes
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
   Control {
-<<<<<<< Updated upstream
-    Width: 200
-    Height: 60
-    UIX: 1500
-    UIY: 400
-=======
->>>>>>> Stashed changes
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
-<<<<<<< Updated upstream
-    Text {
-      Label: "All Drops Found!"
-      Color {
-        G: 0.586000085
-        B: 0.130222157
-        A: 1
-      }
-      Size: 50
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-=======
     Canvas {
->>>>>>> Stashed changes
     }
     AnchorLayout {
       SelfAnchor {
@@ -551,13 +418,8 @@ Objects {
   }
 }
 Objects {
-<<<<<<< Updated upstream
-  Id: 1101463864117394245
-  Name: "DisplayUI_1"
-=======
   Id: 16135151725154221856
   Name: "UI Text Box"
->>>>>>> Stashed changes
   Transform {
     Location {
     }
@@ -569,30 +431,13 @@ Objects {
       Z: 1
     }
   }
-<<<<<<< Updated upstream
-  ParentId: 12722385409200849347
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:GameSettings"
-      ObjectReference {
-        SelfId: 1753263312977082874
-      }
-    }
-  }
-=======
   ParentId: 18270781346320081150
->>>>>>> Stashed changes
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-<<<<<<< Updated upstream
-  Script {
-    ScriptAsset {
-      Id: 13014678719011671718
-=======
   Control {
     Width: 200
     Height: 60
@@ -627,62 +472,12 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
->>>>>>> Stashed changes
     }
   }
 }
 Objects {
-<<<<<<< Updated upstream
-  Id: 14609110887970027975
-  Name: "UI Container"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16202988677352473647
-  ChildIds: 12816650368521196266
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Canvas {
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 12816650368521196266
-  Name: "RoundUI"
-=======
   Id: 9267634616836563056
   Name: "UI Progress Bar"
->>>>>>> Stashed changes
   Transform {
     Location {
     }
@@ -694,11 +489,7 @@ Objects {
       Z: 1
     }
   }
-<<<<<<< Updated upstream
-  ParentId: 14609110887970027975
-=======
   ParentId: 18270781346320081150
->>>>>>> Stashed changes
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -715,12 +506,7 @@ Objects {
         Value: "mc:euianchor:middlecenter"
       }
     }
-<<<<<<< Updated upstream
-    Text {
-      Label: "Text"
-=======
     StatBar {
->>>>>>> Stashed changes
       Color {
         R: 0.426
         G: 0.854222536
@@ -749,13 +535,8 @@ Objects {
   }
 }
 Objects {
-<<<<<<< Updated upstream
-  Id: 8278029968058771920
-  Name: "UI Container"
-=======
   Id: 525257230687326746
   Name: "Camera"
->>>>>>> Stashed changes
   Transform {
     Location {
       X: -750
@@ -769,104 +550,13 @@ Objects {
       Z: 1
     }
   }
-<<<<<<< Updated upstream
-  ParentId: 16202988677352473647
-  ChildIds: 1681562530321525890
-=======
   ParentId: 4781671109827199097
->>>>>>> Stashed changes
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-<<<<<<< Updated upstream
-  Control {
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Canvas {
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 1681562530321525890
-  Name: "DropsUI"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8278029968058771920
-  ChildIds: 8111885660808910033
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 20
-      Justification {
-        Value: "mc:etextjustify:left"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 8111885660808910033
-  Name: "DisplayDrops"
-  Transform {
-    Location {
-=======
   Camera {
     UseAsDefault: true
     AttachToLocalPlayer: true
@@ -895,7 +585,6 @@ Objects {
       X: -950
       Y: -1800
       Z: 200
->>>>>>> Stashed changes
     }
     Rotation {
       Pitch: -6.31323242
@@ -908,250 +597,7 @@ Objects {
       Z: 3.75
     }
   }
-<<<<<<< Updated upstream
-  ParentId: 1681562530321525890
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 1928498699928318983
-    }
-  }
-}
-Objects {
-  Id: 11970190691107049419
-  Name: "Lightbulb & Switch"
-  Transform {
-    Location {
-      X: 2100
-      Y: 50
-      Z: -3.05175781e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
   ParentId: 4781671109827199097
-  ChildIds: 10377205892541338708
-  ChildIds: 13659709193192742130
-  ChildIds: 12937210199974903946
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 11970190691107049419
-    SubobjectId: 553257198919931509
-    InstanceId: 18308075585482733950
-    TemplateId: 15739996845548929326
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 12937210199974903946
-  Name: "Wall and floor"
-  Transform {
-    Location {
-      X: -74.7816772
-      Y: -15.6574707
-      Z: 0.688476563
-    }
-    Rotation {
-      Yaw: 89.999939
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11970190691107049419
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Wall and floor_1"
-  }
-  InstanceHistory {
-    SelfId: 12937210199974903946
-    SubobjectId: 1313095468229843252
-    InstanceId: 18308075585482733950
-    TemplateId: 15739996845548929326
-  }
-}
-Objects {
-  Id: 13659709193192742130
-  Name: "Light switch"
-  Transform {
-    Location {
-      X: 79.9998779
-      Y: -28.9526367
-      Z: 190
-    }
-    Rotation {
-      Yaw: 179.999924
-    }
-    Scale {
-      X: 0.5
-      Y: 0.5
-      Z: 0.5
-    }
-  }
-  ParentId: 11970190691107049419
-  ChildIds: 9498056629293369209
-  ChildIds: 13284479215615117128
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 13659709193192742130
-    SubobjectId: 2027235960096769356
-    InstanceId: 18308075585482733950
-    TemplateId: 15739996845548929326
-  }
-}
-Objects {
-  Id: 13284479215615117128
-  Name: "Base"
-  Transform {
-    Location {
-      X: -5
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13659709193192742130
-  ChildIds: 6664891908329612322
-  ChildIds: 2630527418064251297
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 13284479215615117128
-    SubobjectId: 1866964183919091446
-    InstanceId: 18308075585482733950
-    TemplateId: 15739996845548929326
-  }
-}
-Objects {
-  Id: 2630527418064251297
-  Name: "Hole"
-  Transform {
-    Location {
-      X: 1.91308594
-      Y: 2.50863377e-06
-      Z: -17.5791016
-    }
-    Rotation {
-      Yaw: -0.000213623047
-      Roll: 0.000294046098
-    }
-    Scale {
-      X: 0.0843882859
-      Y: 0.0972784236
-      Z: 0.310904503
-    }
-  }
-  ParentId: 13284479215615117128
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 3985714508255158141
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        A: 0.927000046
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3964233506348894606
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 2630527418064251297
-    SubobjectId: 9597940193947971615
-    InstanceId: 18308075585482733950
-    TemplateId: 15739996845548929326
-  }
-}
-Objects {
-  Id: 6664891908329612322
-  Name: "Chamfered Cube"
-  Transform {
-    Location {
-      X: -9.6947042e-07
-      Y: 0.739318848
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.1
-      Y: 0.7
-      Z: 1
-    }
-  }
-  ParentId: 13284479215615117128
-=======
-  ParentId: 4781671109827199097
->>>>>>> Stashed changes
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1365,37 +811,6 @@ Objects {
   }
 }
 Objects {
-  Id: 16901277261822476267
-  Name: "Environment Fog Default VFX"
-  Transform {
-    Location {
-      X: -800
-      Y: 2200
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 2224571462023946700
-    }
-    TeamSettings {
-    }
-  }
-}
-Objects {
   Id: 5785233464874795310
   Name: "Rain Volume VFX"
   Transform {
@@ -1446,6 +861,7 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 16901277261822476267
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1460,6 +876,37 @@ Objects {
     }
     Vfx {
       AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 16901277261822476267
+  Name: "Environment Fog Default VFX"
+  Transform {
+    Location {
+      X: -7.05881882
+      Y: 274.509827
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.0470587909
+      Y: 0.0784313753
+      Z: 1
+    }
+  }
+  ParentId: 189055110806688984
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 2224571462023946700
+    }
+    TeamSettings {
     }
   }
 }
@@ -2030,10 +1477,6 @@ Objects {
   }
 }
 Objects {
-<<<<<<< Updated upstream
-  Id: 15769345664886830863
-  Name: "Sky Cape Canaveral"
-=======
   Id: 6259953896191013336
   Name: "Point Light"
   Transform {
@@ -2155,7 +1598,6 @@ Objects {
 Objects {
   Id: 14654104045955141938
   Name: "Point Light"
->>>>>>> Stashed changes
   Transform {
     Location {
       X: 1400
@@ -2288,7 +1730,7 @@ Objects {
       Roll: 6.406178e-05
     }
     Scale {
-      X: 50
+      X: 86.3636398
       Y: 50
       Z: 1
     }
@@ -2321,36 +1763,6 @@ Objects {
       Physics {
       }
     }
-  }
-}
-Objects {
-  Id: 12500957234883665446
-  Name: "Environment"
-  Transform {
-    Location {
-      Z: -50
-    }
-    Rotation {
-      Pitch: -0.000273207552
-      Yaw: 2.95522599e-11
-      Roll: 6.406178e-05
-    }
-    Scale {
-      X: 50
-      Y: 50
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Environment"
   }
 }
 Objects {
@@ -2589,7 +2001,6 @@ Objects {
   ParentId: 4781671109827199097
   UnregisteredParameters {
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2598,5 +2009,36 @@ Objects {
   }
   PlayerSpawnPoint {
     TeamInt: 1
+  }
+}
+Objects {
+  Id: 16940102053547858507
+  Name: "Game Settings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Settings {
+    IsDefault: true
+    GameSettings {
+      RagdollOnDeath: true
+      ChatMode {
+        Value: "mc:echatmode:teamandall"
+      }
+    }
   }
 }

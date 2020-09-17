@@ -1,48 +1,4 @@
 ﻿Assets {
-<<<<<<< Updated upstream
-  Id: 17619731731262860672
-  Name: "Emissive Glow Transparent"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_basic_emissive_001"
-  }
-}
-Assets {
-  Id: 17164668289428711060
-  Name: "Cylinder"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_002"
-  }
-}
-Assets {
-  Id: 16270041946170787840
-  Name: "Cube - Rounded"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_rounded_002"
-  }
-}
-Assets {
-  Id: 13631712585594906298
-  Name: "Plastic Matte"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "plastic_matte_001"
-  }
-}
-Assets {
-  Id: 13130357790217864690
-  Name: "Hay 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_hay_002_uv"
-=======
   Id: 14757284996687569360
   Name: "Rock Flat 01"
   PlatformAssetType: 1
@@ -58,7 +14,6 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_fog_adjustment"
->>>>>>> Stashed changes
   }
 }
 Assets {
@@ -89,10 +44,6 @@ Assets {
   }
 }
 Assets {
-<<<<<<< Updated upstream
-  Id: 3985714508255158141
-  Name: "Invisible"
-=======
   Id: 8162117926327767989
   Name: "Basic Water Splash VFX"
   PlatformAssetType: 8
@@ -104,7 +55,6 @@ Assets {
 Assets {
   Id: 6680595136740248056
   Name: "Terrain - Desert"
->>>>>>> Stashed changes
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
@@ -139,10 +89,6 @@ Assets {
   }
 }
 Assets {
-<<<<<<< Updated upstream
-  Id: 370132569225143281
-  Name: "Ambience Desert Day 01 SFX"
-=======
   Id: 2224571462023946700
   Name: "Environment Fog Default VFX"
   PlatformAssetType: 6
@@ -154,7 +100,6 @@ Assets {
 Assets {
   Id: 1557204414509025566
   Name: "Rain Light SFX"
->>>>>>> Stashed changes
   PlatformAssetType: 7
   PrimaryAsset {
     AssetType: "AudioAssetRef"
