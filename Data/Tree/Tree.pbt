@@ -26,6 +26,7 @@ Objects {
   ChildIds: 17931805196680296134
   ChildIds: 6539487312784289270
   ChildIds: 1753263312977082874
+  ChildIds: 17787617192937019293
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -35,6 +36,40 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 17787617192937019293
+  Name: "BottleTemplate"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13862189904760200714
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BottleTemplate"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -350
+            Y: -500
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 399837794429118482
+    }
   }
 }
 Objects {

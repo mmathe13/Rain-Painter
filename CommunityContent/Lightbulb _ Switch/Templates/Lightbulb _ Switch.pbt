@@ -1553,6 +1553,6 @@
   Marketplace {
     Description: "Lightbulb and Switch template for the Lua Scripting Tutorial.\r\n\r\nCheck it out at: https://docs.coregames.com/tutorials/lua_basics_lightbulb/"
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
   DirectlyPublished: true
 }
