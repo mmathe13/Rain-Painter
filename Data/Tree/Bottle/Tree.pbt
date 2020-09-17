@@ -1,12 +1,10 @@
-﻿Name: "Bottles"
-RootId: 14194151642728808760
+﻿Name: "Bottle"
+RootId: 10624806039602612608
 Objects {
-  Id: 1955656282355267077
-  Name: "Trigger"
+  Id: 2767578908312857864
+  Name: "ClientContext"
   Transform {
     Location {
-      X: -400
-      Y: -550
     }
     Rotation {
     }
@@ -16,29 +14,59 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14194151642728808760
-  ChildIds: 10624806039602612608
-  ChildIds: 13679453489604880996
+  ParentId: 10624806039602612608
+  ChildIds: 3650616888393611789
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 3650616888393611789
+  Name: "Bottle 01"
+  Transform {
+    Location {
+      X: 400
+      Y: 550
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2767578908312857864
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Trigger {
-    TeamSettings {
+  CoreMesh {
+    MeshAsset {
+      Id: 16114015911049952507
+    }
+    Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }
 Objects {
-  Id: 13679453489604880996
-  Name: "PickupBottle"
+  Id: 9200130379029607220
+  Name: "SpinBottle"
   Transform {
     Location {
       X: -850
@@ -52,7 +80,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1955656282355267077
+  ParentId: 10624806039602612608
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -62,34 +90,7 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 13636713635015385062
+      Id: 7017210121993053455
     }
-  }
-}
-Objects {
-  Id: 10624806039602612608
-  Name: "Bottle"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1955656282355267077
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Bottle"
   }
 }

@@ -21,7 +21,6 @@ function Tick()
         ResetMap()
     end
 end
-
 function ResetMap()
     -- Set all coins to be enabled
     for _, coin in pairs(coinFolder:GetChildren()) do
