@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 14338680022109012931
-  Name: "ScoreboardControllerClient"
+  Id: 14705217517325991563
+  Name: "Lightening"
   PlatformAssetType: 3
   TextAsset {
   }
